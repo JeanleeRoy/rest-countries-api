@@ -18,6 +18,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: 
+    background-color ease .1s,
+    color ease .1s;
 }
 
 body {
