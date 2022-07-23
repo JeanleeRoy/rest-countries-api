@@ -1,0 +1,49 @@
+.country-card {
+    width: 100%;
+    max-width: 280px;
+    background-color: var(--content-color);
+    border-radius: .2rem;
+    overflow: hidden;
+
+    .country-image {
+        width: 100%;
+        min-height: 100px;
+        background-color: #ccc;
+
+        img {
+            display: block;
+            width: 100%;
+            height: fit-content;
+        }
+    }
+
+    .country-description {
+        padding: 1rem 1.6rem 2.5rem;
+        font-weight: 300;
+
+        h2 {
+            font-size: 18px;
+            padding: .5rem 0 1rem;
+        }
+
+        .country-detail {
+            p {
+                font-size: 14px;
+                padding: .2rem 0;
+            }
+
+            .strong {
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+
+/*   For large screens   */
+
+@media (min-width: 760px) {
+    .country-description {
+        padding: 1.2rem 1.6rem 2.7rem;
+    }
+}

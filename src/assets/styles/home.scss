@@ -12,17 +12,46 @@
     .filter-input {
         grid-area: filters;
     }
+}
 
-    /*   For large screens   */
+.countries {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    row-gap: 3.5rem;
+    width: 100%;
+    padding: 1.5rem 0;
+}
 
-    @media (min-width: 760px) {
-        & {
-            margin: 2rem 0;
-            grid-template-areas: "search filters";
-        }
+
+/*   For large screens   */
+
+@media (min-width: 760px) {
+    .user-inputs {
+        margin: 2rem 0;
+        grid-template-areas: "search filters";
 
         .filter-input {
             justify-self: end;
         }
+    }
+    .countries {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1050px) {
+    .countries {
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 4rem;
+    }
+}
+
+@media (min-width: 1300px) {
+    .countries {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 4.8rem;
+        row-gap: 4.2rem;
     }
 }
