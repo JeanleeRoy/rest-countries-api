@@ -1,0 +1,49 @@
+.select-region {
+    position: relative;
+    width: min(200px, 100%);
+    border-radius: .5rem;
+    background-color: var(--content-color);
+    box-shadow: var(--container-shadow);
+
+    .filter-title {
+        display: flex;
+        width: 100%;
+        padding: 1.2rem;
+        align-items: center;
+        justify-content: space-between;
+        user-select: none;
+        cursor: pointer;
+    }
+
+    .filter-options {
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        margin-top: 4px;
+        padding: 1rem 0;
+        background-color: var(--content-color);
+        box-shadow: var(--container-shadow);
+        border-radius: .5rem;
+        z-index: 5;
+
+        div {
+            padding: .3rem 1.2rem;
+            cursor: pointer;
+
+            &:hover {
+                background-color: hsla(0, 0, 0, .05)
+            }
+
+            .dark-theme &:hover {
+                background-color: hsla(0, 0, 0, .12)
+            }
+        }
+    }
+
+    /*   For large screens   */
+
+    @media (min-width: 760px) {
+        width: 220px;
+    }
+}

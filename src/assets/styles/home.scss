@@ -1,0 +1,28 @@
+.user-inputs {
+    display: grid;
+    row-gap: 1.5rem;
+    grid-template-areas: 
+        "search"
+        "filters";
+
+    .search-input {
+        grid-area: search;
+    }
+
+    .filter-input {
+        grid-area: filters;
+    }
+
+    /*   For large screens   */
+
+    @media (min-width: 760px) {
+        & {
+            margin: 2rem 0;
+            grid-template-areas: "search filters";
+        }
+
+        .filter-input {
+            justify-self: end;
+        }
+    }
+}

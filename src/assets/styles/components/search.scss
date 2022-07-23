@@ -1,0 +1,29 @@
+.search {
+    display: flex;
+    width: min(480px, 100%);
+    padding: .28rem;
+    border-radius: .4rem;
+    color: var(--input-color);
+    background-color: var(--content-color);
+    box-shadow: var(--container-shadow);
+    
+    input[type=search] {
+        width: 100%;
+        padding: 1rem;
+        padding-left: 0;
+        outline: none;
+        border: none;
+        color: var(--input-color);
+        background-color: transparent;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 600;
+
+        .dark-theme & {
+            color: var(--text-color);
+        }
+    }
+
+    button[type=submit] {
+        padding: 0 1.3rem;
+    }
+}
