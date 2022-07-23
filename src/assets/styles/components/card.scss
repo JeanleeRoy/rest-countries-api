@@ -3,17 +3,20 @@
     max-width: 280px;
     background-color: var(--content-color);
     border-radius: .2rem;
+    box-shadow: var(--card-shadow);
     overflow: hidden;
 
     .country-image {
         width: 100%;
-        min-height: 100px;
+        max-height: 200px;
         background-color: #ccc;
+        overflow: hidden;
 
         img {
             display: block;
             width: 100%;
-            height: fit-content;
+            height: 100%;
+            object-fit: cover;
         }
     }
 
@@ -43,6 +46,9 @@
 /*   For large screens   */
 
 @media (min-width: 760px) {
+    .country-image {
+        height: 160px;
+    }
     .country-description {
         padding: 1.2rem 1.6rem 2.7rem;
     }
