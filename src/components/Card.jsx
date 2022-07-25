@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom"
 import '../assets/styles/components/card.scss'
 
 const Card = ({ country }) => {
     return (
-        <div className="country-card">
+        <Link to={`country/${country.name.common}`} className="country-card">
             <div className="country-image">
                 <img src={country.flags.png} alt="country" />
             </div>
@@ -16,7 +17,7 @@ const Card = ({ country }) => {
                     <p><b className='strong'>Capital:</b> {country.capital}</p>
                 </div>
             </div>
-        </div>
+        </Link>
     )
 }
 
