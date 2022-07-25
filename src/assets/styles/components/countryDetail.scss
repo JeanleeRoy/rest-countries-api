@@ -1,0 +1,41 @@
+.country-detail-container {
+    display: grid;
+    justify-items: center;
+    width: 100%;
+
+    .flag {
+        width: 100%;
+
+        img {
+            width: 100%;
+            max-width: 500px;
+            max-height: 340px;
+            object-fit: cover;
+        }
+    }
+
+    .description {
+        width: 100%;
+        
+        .detail {
+            display: grid;
+            width: 100;
+        }
+    }
+
+}
+
+@media (min-width: 678px) {
+    .country-detail-container {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1050px) {
+    .country-detail-container {
+        .detail {
+            grid-template-columns: auto auto;
+        }
+    }
+}

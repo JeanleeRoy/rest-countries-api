@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import BackBtn from "../components/BackBtn"
+import CountryDetail from "../components/CountryDetail"
 import handleUrl from "../utils/countriesApi"
 
 const Country = () => {
@@ -22,7 +23,8 @@ const Country = () => {
     return (
         <>
             <BackBtn />
-            <p>{country?.name.common} Deatails</p>
+            <br />
+            <CountryDetail />
         </>
     );
 }
