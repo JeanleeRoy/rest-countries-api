@@ -1,0 +1,14 @@
+.back-btn {
+    display: flex;
+    align-items: center;
+    padding: .61rem 2.35rem .61rem 2.15rem;
+    border-radius: 0.5rem;
+    background-color: var(--content-color);
+    box-shadow: var(--container-shadow);
+
+    span {
+        display: inline-block;
+        margin-right: .7rem;
+        font-size: 1.5rem;
+    }
+}
